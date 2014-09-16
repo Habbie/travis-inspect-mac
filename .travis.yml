@@ -1,0 +1,15 @@
+language: objective-c
+script:
+ - uname -a
+ - system_profiler
+ - df -h
+ - mount
+ - sudo sysctl -a
+ - ifconfig
+ - netstat -nr
+ - sudo pfctl -s all
+ - date
+ - ps ax
+ - sudo netstat -an
+ - rvm debug
+ - timeout 5 dd if=/dev/random of=/dev/null bs=1k count=1 iflag=fullblock ; echo $?
