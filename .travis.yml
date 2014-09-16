@@ -14,3 +14,4 @@ script:
  - rvm debug
  - timeout 5 dd if=/dev/random of=/dev/null bs=1k count=1 iflag=fullblock ; echo $?
  - screencapture capture.jpg
+ - ls -al
