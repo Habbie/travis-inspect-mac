@@ -16,7 +16,4 @@ script:
  - screencapture capture.jpg capture2.jpg capture3.jpg
  - brew list
  - gem list --local
- - curl -s -F "image=@capture.jpg" -F "key=486690f872c678126a2c09a9e196ce1b" https://imgur.com/api/upload.xml
- - curl -s -F "image=@capture2.jpg" -F "key=486690f872c678126a2c09a9e196ce1b" https://imgur.com/api/upload.xml
- - curl -s -F "image=@capture3.jpg" -F "key=486690f872c678126a2c09a9e196ce1b" https://imgur.com/api/upload.xml
  - ls -al
